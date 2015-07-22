@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <link rel="stylesheet" href="stylePlayer.css" />    <!-- reference to stylesheet for html page -->
+        
+    </head>
+    <body>
+        <section id="playerWindow">
+            <header>
+                <hgroup><h2>My Player</h2></hgroup>
+            </header>
+            <section id="playerContainer">
+                
+                <!-- The main audio which enables HTML5 audio -->
+                <audio id="playerAudio" src="">
+                </audio>
+                
+                <!-- To display current track details -->
+                <section id="currentTrack">
+                    
+                    <!-- To display current Track Name -->
+                    <section id="trackDisplay">
+                        <p>Playing <span id="trackName"></span>....</p>
+                    </section>
+                    
+                    <!-- To show progress of current audio -->
+                    <section id="progressBar">
+                        <section id="progressSeek">
+                        </section>
+                    </section>
+                    <span id="showDuration"></span>
+                </section>
+
+                <!-- To show track list -->
+                <section id="playlist">
+                    <header><hgroup><h4>Playlist</h4></hgroup></header>
+                    <ul>
+                        <li>Hydrate</li>
+                        <li>Epoq - Lepidoptera</li>
+                        <li>Aisa Jadu</li> 
+                        <li>Mists of Time</li>
+                        <li>Dil Ka Rishta</li>
+                        <li>Daiya Daiya Daiya Re</li>
+                    </ul>
+                </section>
+
+                <!-- Buttons to control Player -->
+                <figure id="playerControls">
+                    <img id="repeatButton" alt="Repeat" src="images/RepeatOffIcon.jpg" />
+                    <img id="previousButton" alt="Previous" src="images/PreviousIcon.jpg" />
+                    <img id="playButton" alt="Play" src="images/PlayIcon.jpg" />
+                    <img id="nextButton" alt="Next" src="images/NextIcon.jpg" />
+                    <img id="volumeButton" alt="Volume" src="images/VolumeIcon.jpg" />
+                </figure>
+            </section>
+        </section> 
+       <script src="http://code.jquery.com/jquery-1.9.1.js"></script>  <!--calling jQuery library-->
+        <script src="script.js"></script>   <!-- reference to script for functioning of Player -->
+    </body>
+</html>
